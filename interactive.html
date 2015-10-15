@@ -15,10 +15,9 @@
     </audio>
     <br>
     <h3>Healthy Eating Tips for Kids</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Jj-9f8Yj8g" allowfullscreen></iframe>
-    <br> 
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/1Jj-9f8Yj8g" allowfullscreen></iframe>
     <h3>Fruit Veggie Swag</h3>
-    <video src="videos/fruitveggieswag.mp4" controls></video> 
+    <video src="videos/fruitveggieswag.mp4" controls></video>          
     <br>
     <h3>Choose My Plate</h3>
     <img width="900" height="550" src="images/choosemyplate.jpg" alt="http://firstgradesas.weebly.com/uploads/2/0/6/2/20623748/5589606_orig.jpg" />
@@ -40,5 +39,18 @@
      <object width="900" height="550" data="images/dailyfoodplan.pdf" type="application/pdf">
         <embed src="images/dailyfoodplan.pdf" type="application/pdf"/>
      </object>
+     <br>
+     <canvas id="myCanvas" width="200" height="200" style="border:5px solid #79CDCD;"></canvas>
+
+     <!-- Scripts -->
+     <script>
+       var canvas = document.getElementById('myCanvas');
+       if (canvas.getContext) {
+         var my_canvas = canvas.getContext('2d');
+         my_canvas.fillStyle = "#FFE303";
+         my_canvas.fillRect(15,15,15,15);
+         my_canvas.fillRect(50,50,75,50);
+       }
+     </script>
  </body>
 </html>
