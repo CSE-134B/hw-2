@@ -4,11 +4,77 @@
   		<title>Palpable Content Elements</title>
  	</head>
  	<body>
+ 		<header>
  		<h1>Palpable Content Elements</h1>
 
- 		My elements: blockquote, dl(if elements children include at least one name-value group), fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, main, nav, ol, (if element's children include at least one li element)
+ 		<p> The tags included in this page are: blockquote, dl, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, main, nav, ol,
+ 		</header>
 
- 		<h1>Large Header</h1>
+ 		<div>
+ 			<h1><strong>Headers</strong></h1>
+	 		<h2>Smaller Header</h2>
+	 		<h3>Smaller Header</h3>
+	 		<h4>Smaller Header</h4>
+	 		<h5>Smaller Header</h5>
+	 		<h6>Smallest Header</h6>
+	 	</div>
+
+	 	<main>
+	 	<nav>
+	 		<ol>
+	 			<li><a href="index.html">Index</a></li>
+	 			<li><a href="team.html">Team</a></li>
+	 			<li><a href="conformance.html">Conformance</a></li>
+	 	</nav>
+
+	 	<div>
+ 			<dl>
+	 			<dt>Category 1
+	 			<dd>Item 1 of Category 1
+	 			<dd>Item 2 of Category 1
+	 			<dt>Category 2</dt>
+	 			<dt>Category 2 Also</dt>
+	 			<dd>Item 1 of Category 2
+	 			<dd>Item 2 of Category 2
+	 			<dd>Item 3 of Category 2
+ 			</dl>
+ 		</div>
+
+
+ 		<div>
+ 			<h2>Related Control Fields</h2>
+ 			<fieldset name="mycontrols" disabled>
+ 				<legend>
+ 					Disabled Text Fieldset
+ 				</legend>
+ 				Required Text Field 1: <input type="text" name="required1" required>
+ 				Text Field 2: <input type="text" name="text1">
+ 				Required Text Field 2: <input type="text" name="required2" required>
+ 			</fieldset>
+ 		</div>
+ 		<br />
+ 		<div>
+ 			<fieldset name="mycontrols">
+ 				<legend>
+ 					Enabled Text Fieldset
+ 				</legend>
+ 				<form action="palpable.html" method="get">
+ 					Required Text Field 1: <input type="text" name="required1" required>
+ 					Text Field 2: <input type="text" name="text1">
+ 					Required Text Field 2: <input type="text" name="required2" required>
+ 					<input type="submit" value="Submit">
+ 				</form>
+ 			</fieldset>
+ 		</div>
+ 		<br />
+ 		<div>
+ 			<h2>Figure Example</h2>
+
+ 			<figure>
+ 				<img src="images/ice.jpg" height="300" width="200" alt="Staples Center Ice">
+ 				<figcaption>On the ice at Staples Center</figcaption>
+ 			</figure>
+
 
  		<blockquote>"The question of whether a computer can think is no more interesting than the question of whether a submarine can swim."  -<cite><a href="http://www.goodreads.com/quotes/tag/computer-science">Edsger W. Dijkstra</a></cite></blockquote>
 	</body>
