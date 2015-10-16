@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  		<title>Phrasing tags: FoodRepublic hw2</title>
+  		<style>
+	      table, th, td {
+	        border: 1px solid black;
+	        border-collapse: collapse;
+	        padding: 5px;
+	      }
+	    </style>
+ </head>
+ <body>
+ 	<section>
+ 		<!--BEGIN OF THE CONTENT-->
+ 		<h1>Phrasing Elements</h1>
+ 			<p>The tags included in this page are: data, datalist, and template.</p>
+ 		<section>
+ 			<h3>data</h3>
+ 			<ul>
+	 			<li>
+	                    <data value="0">The HTML5 data attribute lets you assign custom data to an element.</data>
+	             </li>
+	        </ul>
+	    </section>
+	    <section>
+	    	<h3>datalist</h3>
+	    	<ul>
+	 			<li>
+	    		<p>The datalist tag specifies a list of pre-defined options for an input element.</p>
+	    		</li>
+	    	</ul>
+	    	<input list = "members">
+	    	<datalist id="members">
+	    		<option value="Jiangtian Wang">Jiangtian Wang</option>
+	    		<option value="Kann Chea">Kann Chea</option>
+	    		<option value="Xu He">Xu He</option>
+	    		<option value="Megan Ring">Megan Ring</option>
+	    		<option value="Tyler Tedeschi">Tyler Tedeschi</option>
+	    	</datalist>
+	    </section>
+	    
+	    	
+		<h3>templates</h3>
+			<ul>
+					<li>
+				  		<p>The template here describes the structure of an HTML fragment representing a single table row.</p>
+				  	</li>
+			</ul>
+			<table id="producttable2">
+
+			  <thead>
+			    <tr>
+			      <th>Blizzard Games</th>
+			      <th>Year</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <!-- existing data could optionally be included here -->
+			  </tbody>
+			</table>
+
+			<template id="productrow">
+			  <tr>
+			    <td class="record"></td>
+			    <td></td>
+			  </tr>
+			</template>
+
+			<script>
+			// Test to see if the browser supports the HTML template element by checking
+			// for the presence of the template element's content attribute.
+			if ('content' in document.createElement('template')) {
+
+			  // Instantiate the table with the existing HTML tbody and the row with the template
+			  var t = document.querySelector('#productrow'),
+			  td = t.content.querySelectorAll("td");
+			  td[0].textContent = "Starcraft";
+			  td[1].textContent = "1998";
+
+			  // Clone the new row and insert it into the table
+			  var tb = document.getElementsByTagName("tbody");
+			  var clone = document.importNode(t.content, true);
+			  tb[0].appendChild(clone);
+			  
+			  // Create a new row
+			  td[0].textContent = "Warcraft";
+			  td[1].textContent = "1994";
+
+			  // Clone the new row and insert it into the table
+			  var clone2 = document.importNode(t.content, true);
+			  tb[0].appendChild(clone2);
+			  
+			  // Create a new row
+			  td[0].textContent = "World of Warcraft";
+			  td[1].textContent = "2004";
+			  
+			  var clone = document.importNode(t.content, true);
+			  tb[0].appendChild(clone);
+			  
+			  // Create a new row
+			  td[0].textContent = "Diablo";
+			  td[1].textContent = "1996";
+			  
+			  var clone = document.importNode(t.content, true);
+			  tb[0].appendChild(clone);
+			  
+			  // Create a new row
+			  td[0].textContent = "Hearthstone";
+			  td[1].textContent = "2014";
+
+			  var clone = document.importNode(t.content, true);
+			  tb[0].appendChild(clone);
+
+			} else {
+			}</script>
+				
+ 	</section>
+	</body>
+ </html>
