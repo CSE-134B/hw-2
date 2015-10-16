@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive &amp; Embedded Content</title>
+ </head>
+ <body>
+    <header>
+        <h1>Interactive &amp; Embedded Content</h1>
+        <p>The tags included in this page are: audio, button, canvas, embed, iframe, img, input, label, noscript, object, option, script, select, textarea, and video.</p>
+    </header>
+    <h3>Fixing the Childhood Obesity Epidemic</h3> 
+    <p>Matt Young | TEDxStanleyPark</p>  
+    <audio controls>
+        <source src="../videos/fixingchildhoodobesity.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <h3>Healthy Eating Tips for Kids</h3>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/1Jj-9f8Yj8g" allowfullscreen></iframe>
+    <h3>Fruit Veggie Swag</h3>
+    <video src="../videos/fruitveggieswag.mp4" controls></video>          
+    <br>
+    <h3>Choose My Plate</h3>
+    <img width="900" height="550" src="../images/choosemyplate.jpg" alt="http://firstgradesas.weebly.com/uploads/2/0/6/2/20623748/5589606_orig.jpg" />
+    <br>
+    <p>Taken from: ChooseMyPlate</p>
+    <button onclick="window.open('http://www.choosemyplate.gov/videos','_blank');">Check out ChooseMyPlate.gov</button>    
+    <p>How much does your child exercise?</p>
+    <select name="Exercise Hours">
+        <option value="value1" selected>0-2 hours/week</option> 
+        <option value="value2">3-5 hours/week</option>
+        <option value="value3">6-8 hours/week</option>
+        <option value="value3">9+ hours/week</option>
+     </select>
+     <br><br>
+     <textarea name="textarea" rows="8" cols="75" wrap="hard" placeholder="Please enter a description of your child's physical activities:"></textarea>
+     <br><br>
+     <label>How much does your child weigh? <input placeholder="(in lbs)" type="text"></label>
+     <h3>Daily Food Plan Example</h3> 
+     <object width="900" height="550" data="../images/dailyfoodplan.pdf" type="application/pdf">
+        <embed src="images/dailyfoodplan.pdf" type="application/pdf"/>
+     </object>
+     <br>
+     <p>This is an example of the canvas tag:</p>
+     <canvas id="myCanvas" width="200" height="200" style="border:5px solid #79CDCD;"></canvas>
+
+     <!-- Scripts -->
+     <script>
+       var canvas = document.getElementById('myCanvas');
+       if (canvas.getContext) {
+         var my_canvas = canvas.getContext('2d');
+         my_canvas.fillStyle = "#FFE303";
+         my_canvas.fillRect(15,15,15,15);
+         my_canvas.fillRect(50,50,75,50);
+       }
+     </script>
+     <noscript>Your browser does not support JavaScript!</noscript>
+ </body>
+</html>
