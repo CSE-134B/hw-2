@@ -1,8 +1,134 @@
-<div>
-	<h2>Figure Example</h2>
 
-	<figure>
-		<img src="images/ice.jpg" height="300" width="200" alt="Staples Center Ice">
-		<figcaption>On the ice at Staples Center</figcaption>
-	</figure>
-</div>
+<!DOCTYPE HTML>
+<html>
+ 	<head>
+  		<title>Flow Content Elements</title>
+ 	</head>
+ 	<body>
+ 		<h1>Flow Content Elements</h1>
+ 		<hr>
+ 		<p>In this assignment, we will play around with <abbr title="HyHyperText Markup Language">HTML</abbr> tags. We are going to learn a lot about HTML!</p>
+ 		
+ 		<p>In the last assignment, Megan introduced us to a website called Xtensio.</p>
+
+		<aside>
+  			<h2>Xtensio</h2>
+  			<p>Xtensio allows us to create personas easily.</p>
+		</aside>
+		
+ 		<article>
+  			<h3>Food Republic</h3>
+ 			<p><b>Food Republic</b> is a website that helps parents <wbr>save times in cooking and track their intakes by providing 
+ 			   easy healthy recipes. It will generate a shopping list once the users finish selecting their meals. </p>
+		</article>
+		
+		<p>Most of us read from left to right. Can we read from right to left? Let's try! <bdo dir="rtl">Now I'm reading from right to left!</bdo></p>
+
+		<p>Are you a programmer? What do you think my code will produce?</p>
+		<pre><code>
+		public class HelloWorld {
+			public static void main(String[] args) {
+				System.out.println("Hello World!");
+			}
+		}
+		</code></pre>
+		<br>
+		<p>In case you don't know, here's a sample output: <samp>Hello World!</samp></p>
+		
+		<p>After brainstorming, we eliminate items that we don't want by crossing them out like so: <del>unwanted items</del> or just <mark>highlight</mark> what we want to keep.</p>
+		
+		<p>What is <i>love</i>? According to <em>Google</em>, <dfn>Love</dfn> is an intense feeling of deep affection.</p>
+			
+ 		<p>My favorite quote is <q>Follow your heart.</q></p>
+ 		
+        <p>Formula to find the hypotenuse of a right triangle: 
+        <math>
+            <mrow>
+              <mrow>
+                <msup>
+                  <mi>a</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mn>2</mn>
+                </msup>
+              </mrow>
+              <mo>=</mo>
+              <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+        </math>
+        </p> 
+        <p>Our website security level:
+        <meter value="3" min="0" max="5">3 out of 5</meter>
+        </p>
+        
+        <ul>
+         <li>User <bdi>Megan</bdi>: <var>100</var> points</li>
+         <li>User <bdi>Kann</bdi>: <var>100</var> points</li>
+         <li>User <bdi>Ken</bdi>: <var>100</var> points</li>
+         <li>User <bdi>Tyler</bdi>: <var>100</var> points</li>
+         <li>User <bdi>Jiangtian</bdi>: <var>100</var> points</li>
+        </ul>
+        
+        <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+        <p><q>Our keyword of the website is <kbd>food</kbd>.</q></p>
+        
+        <form action="demo_keygen.asp" method="get">
+          Username: <input type="text" name="usr_name">
+          Encryption: <keygen name="security">
+          <input type="submit">
+        </form>
+        
+        <p><strong>Note:</strong> The keygen tag is not supported in Internet Explorer.</p>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+        </form>
+        <p>The download progress:<progress value="22" max="100"></progress></p>
+        
+        <p><u>Learning Chinese</u>：  
+        <ruby>
+        
+         汉 <rt> hàn </rt>
+         字 <rt> zì  </rt>
+        </ruby>
+        </p>
+        <table style="width:50%">
+          <tr>
+            <td>Megan</td>	
+            <td>Senior</td>
+          </tr>
+          <tr>
+            <td>Kann</td>		
+            <td>Senior</td>
+          </tr>
+
+        </table>
+        <p>We open at <time>10:00</time> every morning.</p>
+        <p><s>My car is <span style="color:blue;font-weight:bold">blue</span>.</s></p>
+        <p>My new car is silver.</p>
+        <p>This text contains <sub>subscript</sub> text.</p>
+        <p>This text contains <sup>superscript</sup> text.</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <p><small>Copyright 1999-2050 by Food Republic.</small></p>
+ 		<footer>
+ 			<address><span style="color:blue">UCSD is located at 9500 Gilman Dr, La Jolla, CA 92093</span></address>
+ 			<img src="images/ContactUs.jpg" width="200" height="50" alt="ContactUs" usemap="#ContactUs">
+ 			<map name="ContactUs"> 
+ 				<area shape="rect" coords="0,0,400,400" alt="ContactUs" href="team.html"  target="_blank" />
+ 			</map>  
+		</footer>	
+		
+		
+	</body>
+ </html>
+>>>>>>> 4c83c5f462ba7585140a3fc9f583ee466139abbd
