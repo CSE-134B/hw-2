@@ -2,3 +2,13 @@
 	{
 		text-align: center;
 	}
+#linkscontainer ul {
+    margin: 50px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+#linkscontainer ul li {
+    display: inline;
+    margin: 10px;
+}
