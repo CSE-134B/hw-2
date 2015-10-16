@@ -15,7 +15,8 @@
 #TeamPage 
 {
 	text-align: center;
-	font-size: 45px;
+	font-size: 40px;
+	color: #585858;
 }
 	
 .team
@@ -78,3 +79,7 @@
 	height: 350px;
 	text-align: center;
 }
+
+
+
+
